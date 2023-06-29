@@ -1,7 +1,5 @@
 import Head from 'next/head';
-
-import Landing from './components/Landing';
-import styles from '../styles/LandingPage.module.css'
+import Website from './components/Website';
 export default function Home() {
   return (
     <>
@@ -11,7 +9,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.ico" />
       </Head>  <main className="relative h-[200vh] bg-[#0E1129]"> <div className="flex items-center justify-center h-screen bg-[#0E1129]">
-        <Landing />
+        <Website />
       </div></main>
     </>
   );
