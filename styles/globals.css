@@ -1,27 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  .font-body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: url('fonts/Agdasima-Bold.woff2') format('woff2');
+    font-weight: 400;
+    font-display:swap ;
+    font-style: normal;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .headerLink {
+    @apply cursor-pointer opacity-75 text-pink-200 transition hover:opacity-100;
+  }
+
+  .headerIcon {
+    @apply h-6 w-6 cursor-pointer text-white opacity-75 transition hover:opacity-100;
+  }
+  .buttonBox {
+    @apply h-9 w-48 cursor-pointer text-white opacity-75 transition hover:opacity-100;
+  }
+
+  .link {
+    @apply relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100;
+  }
+
+  .borderGradient {
+    text-align: center;
+    padding-bottom: 5px;
+    background: linear-gradient(to right, #ffae00, #be8801) left bottom
+      no-repeat;
+    background-size: 100% 2px;
+  }
+
+  .tabPanel {
+    @apply grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3;
+  }
+}
+.box-contact-us {
+  width: 600px;
+  height: 600px;
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+/* Customizations for different screen sizes */
+@layer utilities {
+  @screen sm {
+    body {
+      background-color: #0E1129;
+    }
+  }
+
+  @screen xl {
+    body {
+      background-color: #0E1129;
+    }
+  }
+
+  @screen 2xl {
+    body {
+      background-color: #0E1129;
+    }
+  }
+
+  @screen lg {
+    body {
+      background-color: #0E1129;
+    }
+  }
 }
