@@ -10,9 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-       agdasima: 'Agdasima,cursive',
-      },
     },
     screens: {
     "2xl": { max: "1535px" },
