@@ -7,7 +7,7 @@ function Landing() {
     <section className="bg-[#0E1129] flex-col h-screen ">
 		  <div className="flex flex-col ">
 		  <h1 className="space-y-3  text-5xl text-center font-semibold tracking-wide lg:text-6xl xl:text-7xl">
-          <span className=" font-agdasima block bg-gradient-to-r mt-44  from-violet-300 to-pink-500 bg-clip-text text-transparent">
+          <span className="  block bg-gradient-to-r mt-44  from-violet-300 to-pink-500 bg-clip-text text-transparent">
            Click on Jupiter
           </span>
         </h1>

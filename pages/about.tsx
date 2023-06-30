@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from './components/Header'
-import ContactUs from './components/ContactUs'
+import AboutUs from './components/AboutUs'
 
-function contactus() {
+function about() {
   return (
 	<div className=''>     <Header />
     <main className="relative h-[200vh] bg-[#0E1129]">
- <ContactUs/>
+ <AboutUs/>
     </main> </div>
   )
 }
 
-export default contactus
+export default about

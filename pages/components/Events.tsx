@@ -3,27 +3,30 @@ import React from 'react'
 
 function Events() {
   return (
-	  <section className="sticky top-0 mx-auto flex flex-col h-screen max-w-[1350px] gap-60 px-8">
-
-<div className="flex bg-[#0E1129]">
-	  <div className="w-1/2">
-	  <h1 className=" text-5xl mt-44 font-semibold tracking-wide lg:text-6xl xl:text-7xl">
-          <span className="block sm:hidden font-agdasima bg-gradient-to-r  from-violet-300 to-pink-500 bg-clip-text text-transparent">
-          Our Events
-          </span></h1><span className="flex mt-44 font-agdasima bg-gradient-to-r  text-4xl from-violet-300 to-pink-500 bg-clip-text text-transparent">
-     Lorumep sum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    <section className="relative top-0 mx-auto flex flex-col h-screen max-w-[1350px] gap-60 px-8">
+      <div className="flex bg-[#0E1129]">
+        <div className="w-1/2 flex-col">
+		<h1 className=" text-5xl mt-44 sm:mt-14 font-semibold tracking-wide lg:text-6xl xl:text-7xl">
+		  <span className="block bg-gradient-to-r sm:text-3xl lg:text-5xl  from-violet-300 to-pink-500 bg-clip-text text-transparent">
+              Our Events
+            </span>
+          </h1>
+          <span className="flex sm:hidden mt-20  bg-gradient-to-r lg:text-2xl text-4xl from-violet-300 to-pink-500 bg-clip-text text-transparent">
+            We have established collaborations with selected bars and nightclubs
+            in Strasbourg to host our events. These partnerships ensure that our
+            events are organized in vibrant and exciting venues within the city.{' '}
           </span>
-	  </div>
-		<div className="">
-		<Spline scene="https://prod.spline.design/gVpdQi1Z0qQCNEIG/scene.splinecode" />
-		<span className="sm:flex font-agdasima bg-gradient-to-r hidden text-6xl from-violet-300 to-pink-500 bg-clip-text text-transparent">
-        Our Events
-				  </span>
-				   <span className="sm:flex mt-10 font-agdasima bg-gradient-to-r hidden text-4xl from-violet-300 to-pink-500 bg-clip-text text-transparent">
-     Lorumep sum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          </span>
-		</div>
-	</div> </section>
+        </div>
+        <div className=" flex-col sm:hidden  xs:hidden  lg:hidden md:hidden  items-center justify-center">
+          <Spline scene="https://prod.spline.design/gVpdQi1Z0qQCNEIG/scene.splinecode" />{' '}
+        </div>{' '}
+		<span className="sm:flex mt-44 bg-gradient-to-r hidden text-2xl from-violet-300 to-pink-500 bg-clip-text text-transparent">
+          We have established collaborations with selected bars and nightclubs
+          in Strasbourg to host our events. These partnerships ensure that our
+          events are organized in vibrant and exciting venues within the city.{' '}
+        </span>
+      </div>{' '}
+    </section>
   )
 }
 

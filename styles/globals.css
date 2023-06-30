@@ -22,7 +22,7 @@
   }
 
   .headerIcon {
-    @apply h-6 w-6 cursor-pointer text-white opacity-75 transition hover:opacity-100;
+    @apply h-6 w-6 cursor-pointer text-pink-200 opacity-75 transition hover:opacity-100;
   }
   .buttonBox {
     @apply h-9 w-48 cursor-pointer text-white opacity-75 transition hover:opacity-100;
@@ -49,6 +49,14 @@
   height: 600px;
   animation: float 2s ease-in-out infinite;
 }
+.Image{
+  width: 100px;
+  height: 100px;
+  animation: float 2s ease-in-out infinite;
+}
+.Text{
+  animation: float 2s ease-in-out infinite;
+}
 @keyframes float {
   0% {
     transform: translate(0, 0);
@@ -60,6 +68,7 @@
     transform: translate(0, 0);
   }
 }
+
 
 
 /* Customizations for different screen sizes */
